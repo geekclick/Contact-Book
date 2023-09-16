@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: small;
+}
+
+.head{
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.head>h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.head>p{
+    width: 70%;
+    margin: auto;
+}
+
+.add-div{
+    display: flex;
+    justify-content: center;
+}
+
+.create-btn{
+    margin: auto 18em;
+    width: 50%;
+    margin-bottom: 4rem;
+}
+.add-ct>h2{
+    text-align: center;
+}
+.add-ct>form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+
+.add-ct>form>input{
+    padding: .7rem;
+}
+
+.add-ct>form>button{
+    margin: 1rem 0;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.show-ct{
+    padding: 4rem;
+    width: 70%;
+    margin: auto;
+}
+
+nav{
+    color: white;
+    background-color: rgb(34, 33, 33);
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .1px solid gray;
+}
+
+nav>h1{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.srch-form{
+    display: flex;
+    gap: .5rem;
+    margin-right: 1rem;
+}
+
+.srch-form>button,input{
+    padding: .5rem;
+    border-radius: .4rem;
+}
+
+.opt{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.results{
+    width: 80%;
+    margin: 2rem;
+}
+
+.results>h2{
+    margin: 1rem 0;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+    height: 12rem;
+    margin-top: 32rem;
+}
+footer>ul{
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    margin: 1rem;
+    padding: 2rem;
+}
+footer>ul>li>a{
+    color: white;
+}
+footer>p{
+    color: grey;
+}
+
+@media screen and (max-width: 492px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    .head{
+        margin: 1.5rem;
+    }
+    .head>h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .head>p{
+        font-size: smaller;
+        width: 100%;
+    }
+    .show-ct{
+        padding: 2rem;
+        width: 100%;
+    }
+    .add-ct>form {
+        width: 75%;
+    }
+    .results{
+        width: 100%;
+        margin: .5rem;
+    }
+}

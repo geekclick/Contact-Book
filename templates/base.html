@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Contact Book</title>
+</head>
+<body>
+    <nav>
+        <h1 onclick="location.href='/'">Contact Book</h1>
+        <form action="/search" method="post" class="srch-form">
+            <input type="search" name="search" id="search" placeholder="Search Contact">
+            <button type="submit" class="btn btn-danger">Search</button>
+        </form>
+    </nav>
+    <div class="head">
+        <h2>Save your daily contacts</h2>
+        <p>Welcome to our Contact Book Website! Simplify your life by organizing all your important contacts in one secure and user-friendly platform. Easily add, edit, and manage your contacts, and access them anytime, anywhere. Say goodbye to lost phone numbers and forgotten email addresses – our Contact Book Website keeps your connections at your fingertips, making communication effortless and efficient.</p>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/help">Help</a></li>
+        </ul>
+        <p class="text-center text-muted m-0">&copy; 2022 Company, Inc</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

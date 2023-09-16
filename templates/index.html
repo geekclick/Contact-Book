@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+    {% block content %}
+
+    <div class="add-div">
+        <button type="click" onclick="location.href='/add-ct'" class="btn btn-danger create-btn">Create new contact</button>
+    </div>
+    <div class="show-ct">
+        <h2>Your Contacts:</h2>
+        {% if data|length == 0 %}
+                No contacts to show
+            {% else %}
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Update/Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+              {% for ct in data %}
+              <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{ct.name}}</td>
+                <td>{{ct.phone}}</td>
+                <td>
+                    <div class="opt">
+                        <button type="click" class="btn btn-danger" onclick="location.href='/update/{{ct.sno}}'">Update</button>
+                        <button type="click" class="btn btn-danger" onclick="location.href='/delete/{{ct.sno}}'">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+            </tbody>
+          </table>
+    </div>
+    {% endblock %}
