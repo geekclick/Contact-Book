@@ -9,14 +9,17 @@ This is a simple web-based Contact Book application built with Flask, a Python w
 
 # Installation
 Clone the repository to your local machine:
+
     ```bash
     git clone https://github.com/your-username/contact-book-flask.git
-
+    ```
 Navigate to the project directory:
+
     ```bash
     cd contact-book-flask
 
 Create a virtual environment (optional but recommended):
+
     ```bash
     python -m venv venv
 
